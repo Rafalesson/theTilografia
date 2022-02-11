@@ -47,6 +47,7 @@ body{
 }
 
 .botao{
+    display: none;
     background-color: #f5fafe;
     margin: 2.5em auto;
     padding: 1em;

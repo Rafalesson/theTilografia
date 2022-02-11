@@ -1,7 +1,7 @@
 function mostraNumPalavras(){
     let frases = $('.campo-digitacao').text()
     
-    let numPalavras = frases.split(" ").length
+    let numPalavras = frases.split(' ').length-1
     
     let tamanhoFrase = $('#caracter')
 
@@ -12,11 +12,11 @@ mostraNumPalavras()
 function eventoClick (){
     let campo = $('.campo-digitacao')
     let botao = $('.botao')
-    botao.on('click', function(){
+    campo.on('input', function(){
         
     let conteudo = campo.val()
         
-    let qtdPalavras = conteudo.split(' ').length
+    let qtdPalavras = conteudo.split(/\S+/).length
     $('#palavras').text(qtdPalavras)
 
     let qtdCaracter = conteudo.length
