@@ -1,0 +1,137 @@
+body{
+    background: rgb(240, 240, 240);
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho{
+    display: flex;
+    background: #f5fafe;
+    font-family: 'Shizuru', cursive;
+    font-weight: bolder;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.titulo-cabecalho{
+   letter-spacing: .1em;
+   font-size: 2em;
+}
+
+.main-box{
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Courier Prime', monospace;
+}
+
+.box1{
+   width: 45vw; 
+   height: auto;
+   display: flex; 
+   flex-direction: column; 
+    justify-content: center;
+}
+
+.box2{
+    width: 45vw;
+    height: auto;
+    display: flex;
+
+}
+
+.botao{
+    background-color: #f5fafe;
+    margin: 2.5em auto;
+    padding: 1em;
+    width: 20vw;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+
+.botao:hover{
+    background: rgba(15, 15, 15, .8);
+    color: #f5fafe;
+    transition: 400ms;
+}
+
+.maquina-img{
+    margin: 0 auto;
+    height: 40%;
+    opacity: .5;
+    width: auto;
+    align-self: center;
+}
+
+.maquina-img:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+.campo-digitacao{
+    width: 30vw;
+    height: 20vh;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+    margin: 1em auto;
+    outline-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.informacoes li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+    
+}
+
+.numPalavras, .segundos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    box-shadow: 1px 1px 4px black;
+    background-color: #f5fafe;
+    border-radius: 10px;
+    padding: 2px 10px; 
+    width: 2em;
+    height: 2em;
+    margin: auto 1em;
+}
+
+#segundos:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    font-family: 'Shizuru', cursive;
+    width: 100%;
+    height: 8vh;
+    background: #f5fafe;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 5px black;
+}
