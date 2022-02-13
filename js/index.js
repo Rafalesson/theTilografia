@@ -16,7 +16,7 @@ function eventoClick (){
         
     let conteudo = campo.val()
         
-    let qtdPalavras = conteudo.split(/\S+/).length
+    let qtdPalavras = conteudo.split(/\S+/).length-1
     $('#palavras').text(qtdPalavras)
 
     let qtdCaracter = conteudo.length
