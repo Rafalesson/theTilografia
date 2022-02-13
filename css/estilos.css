@@ -3,6 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
     height: 100vh;
+    color: #f5fafe;
 }
 
 .cabecalho{
@@ -15,6 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 5px black;
+    color: black;
 
 }
 
@@ -24,6 +26,10 @@ body{
 }
 
 .main-box{
+    background: linear-gradient(rgba(0, 0, 0, .96), rgba(0, 0, 0, 1)), url(https://raw.githubusercontent.com/Rafalesson/theTilografia/d460092ed29951017e6a09ad1b8c0f93a04e9949/img/favicon.svg);
+    background-position: center;
+    background-repeat: space;
+    background-size: contain;
     width: 100%;
     height: 82vh;
     display: flex;
@@ -39,64 +45,72 @@ body{
     justify-content: center;
 }
 
-.box2{
-    width: 45vw;
-    height: auto;
-    display: flex;
-
-}
-
-.botao{
-    display: none;
-    background-color: #f5fafe;
-    margin: 2.5em auto;
-    padding: 1em;
-    width: 20vw;
-    box-shadow: 1px 1px 4px black;
-    border-radius: 25px;
-    font-weight: bolder;
-}
-
-.botao:hover{
-    background: rgba(15, 15, 15, .8);
-    color: #f5fafe;
-    transition: 400ms;
-}
-
-.maquina-img{
+.titulo-principal{
     margin: 0 auto;
-    height: 40%;
-    opacity: .5;
-    width: auto;
-    align-self: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 80%;
 }
 
-.maquina-img:hover{
-    opacity: 1;
-    transform: scale(1.5);
-    transition: 1s;
+.texto-box1{
+    width: 80%;
+    text-align: justify;
+    margin: 1em auto;
+    background: rgba(255, 255, 255, .1);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.informacoes1{
+    margin: 0 auto;
+    line-height: 2em;
+}
+
+.segundos{
+    background: rgba(255, 255, 255);
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: black;
 }
 
 .campo-digitacao{
-    width: 30vw;
+    width: 80%;
     height: 20vh;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 1px 1px 4px black;
     margin: 1em auto;
     outline-color: rgba(0, 0, 0, 0.5);
+    color: black;
 }
 
+.campo-digitacao:focus{
+    background: rgba(255, 255, 255, .1);
+    outline: none;
+    font-weight: bold;
+    color: #f5fafe;
+}
 
+.box2{
+    background: url();
+    width: 45vw;
+    height: auto;
+    display: flex;
 
-.informacoes{
+}
+
+.informacoes2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
+    color: #f5fafe;
 }
 
-.informacoes li{
+.informacoes2 li{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,26 +118,20 @@ body{
     
 }
 
-.numPalavras, .segundos{
+.numPalavras, .palavras{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
     font-weight: bolder;
     box-shadow: 1px 1px 4px black;
-    background-color: #f5fafe;
+    background: rgba(255, 255, 255, .1);
     border-radius: 10px;
     padding: 2px 10px; 
     width: 2em;
     height: 2em;
     margin: auto 1em;
 }
-
-#segundos:hover{
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
 
 footer{
     display: flex;
@@ -135,4 +143,5 @@ footer{
     justify-content: center;
     align-items: center;
     box-shadow: 3px 3px 3px 5px black;
+    color: black;
 }
