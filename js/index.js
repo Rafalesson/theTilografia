@@ -39,7 +39,7 @@ function senhorDoTempo() {
 
             }
 
-            if(tempoRestante == 3){
+            if(tempoRestante == 5){
                 $('.segundos').css({
                     background: 'red',
                     color: 'white'
