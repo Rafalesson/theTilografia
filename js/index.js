@@ -1,12 +1,14 @@
 function mostraNumPalavras() {
-    let frases = $('.campo-digitacao').text()
+    let frases = $('.texto-box1').text()
 
     let numPalavras = frases.split(/\S+/).length - 1
 
-    let tamanhoFrase = $('#caracter')
+    let tamanhoFrase = $('#qtdPalavras')
 
     return tamanhoFrase.text(numPalavras)
 }
+
+mostraNumPalavras()
 
 
 function campoDigitacao() {
@@ -54,6 +56,8 @@ function senhorDoTempo() {
                     background: 'white',
                     fontWeight: 'bold'
                 })
+                campo.removeClass('borda-vermelha')
+                campo.removeClass('borda-verde')
             }
             
         }, 1000)
@@ -62,8 +66,23 @@ function senhorDoTempo() {
 
 senhorDoTempo()
 
+function verificaTexto(){
+    let texto = $('.texto-box1').text()
+    let campo = $('.campo-digitacao')
 
+    campo.on('input', function(){
+        let digitado = campo.val()
+        let comparavel = texto.substr(0, digitado.length)
 
+        if(digitado == comparavel){
+            campo.addClass('borda-verde')
+            campo.removeClass('borda-vermelha')
+        }
+        else{
+            campo.addClass('borda-vermelha')
+            campo.removeClass('borda-verde')
+        }
+    })
+}
 
-
-
+verificaTexto()

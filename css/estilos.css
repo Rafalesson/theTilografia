@@ -64,7 +64,7 @@ body{
 
 .informacoes1{
     margin: 0 auto;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 .segundos{
@@ -75,6 +75,14 @@ body{
     color: black;
 }
 
+#qtdPalavras{
+    background: rgba(255, 255, 255, .1);
+    padding: 7px 15px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #f5fafe;
+}
+
 .campo-digitacao{
     width: 80%;
     height: 20vh;
@@ -82,7 +90,7 @@ body{
     border-radius: 10px;
     box-shadow: 1px 1px 4px black;
     margin: 1em auto;
-    outline-color: rgba(0, 0, 0, 0.5);
+    outline: none;
     color: black;
 }
 
@@ -144,4 +152,14 @@ footer{
     align-items: center;
     box-shadow: 3px 3px 3px 5px black;
     color: black;
+}
+
+/*classes adicionais que chamo no js*/
+
+.borda-verde{
+    border: 2px solid springgreen;
+}
+
+.borda-vermelha{
+    border: 2px solid red;
 }
