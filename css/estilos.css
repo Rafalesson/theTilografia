@@ -2,8 +2,10 @@ body{
     background: rgb(240, 240, 240);
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     color: #f5fafe;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cabecalho{
@@ -11,8 +13,9 @@ body{
     background: #f5fafe;
     font-family: 'Shizuru', cursive;
     font-weight: bolder;
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    height: auto;
+    padding: 1em;
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 5px black;
@@ -31,40 +34,61 @@ body{
     background-repeat: space;
     background-size: contain;
     width: 100%;
-    height: 82vh;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-family: 'Courier Prime', monospace;
 }
 
 .box1{
-   width: 45vw; 
+   width: 100%; 
    height: auto;
    display: flex; 
-   flex-direction: column; 
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+.area-texto{
+    width: 35%;
+}
+
+.area-campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    width: 40%;
+    margin: auto 0;
 }
 
 .titulo-principal{
-    margin: 0 auto;
+    margin: 1.5em auto;
     font-size: 1.5em;
     font-weight: bolder;
-    width: 80%;
+    width: 100%;
+    text-align: center;
 }
 
 .texto-box1{
-    width: 80%;
+    width: 100%;
+    height: auto;
+    line-height: 1.1em;
+    letter-spacing: 1px;
     text-align: justify;
-    margin: 1em auto;
+    margin: 0 auto;
     background: rgba(255, 255, 255, .1);
-    padding: 20px;
+    padding: 1.5em;
     border-radius: 10px;
     font-size: 1.1em;
 }
 
 .informacoes1{
-    margin: 0 auto;
-    line-height: 3em;
+    margin: 2em auto;
+}
+
+.l1{
+    margin: 2em auto 0 auto;
 }
 
 .segundos{
@@ -84,8 +108,8 @@ body{
 }
 
 .campo-digitacao{
-    width: 80%;
-    height: 20vh;
+    width: 100%;
+    height: 25vh;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 1px 1px 4px black;
@@ -101,19 +125,21 @@ body{
     color: #f5fafe;
 }
 
+
+
 .box2{
-    background: url();
-    width: 45vw;
+    margin: 0 auto;
+    width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-evenly;
+
 
 }
 
 .informacoes2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;   
     margin: 0 auto;
     color: #f5fafe;
 }
@@ -141,11 +167,52 @@ body{
     margin: auto 1em;
 }
 
+.secao-info{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+
+.placar{
+    display: flex;
+    width: 40%;
+    height: auto;
+    flex-wrap: wrap;
+    line-height: 2em;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    padding: 1.5em;
+    color: #f5fafe;
+    margin: 2em 8em;
+}
+
+.placar table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(245, 250, 254, .1);
+    
+}
+
+.placar thead{
+    border-bottom: 1px solid rgba(245, 250, 254, .1);
+}
+
+.titulo-h3{
+    width: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
 footer{
     display: flex;
     font-family: 'Shizuru', cursive;
     width: 100%;
-    height: 8vh;
+    height: auto;
+    padding: 15px;
     background: #f5fafe;
     font-weight: bold;
     justify-content: center;
@@ -163,3 +230,4 @@ footer{
 .borda-vermelha{
     border: 2px solid red;
 }
+
