@@ -37,48 +37,49 @@ function senhorDoTempo() {
             tempoRestante--
             $('.segundos').text(tempoRestante)
 
-            if (tempoRestante == 3){
-
-            }
-
-            if(tempoRestante == 5){
+            if (tempoRestante == 5) {
                 $('.segundos').css({
                     background: 'red',
                     color: 'white'
                 })
             }
-            
+
             if (tempoRestante == 0) {
-                campo.attr('disabled', true)
                 clearInterval(cronometro)
+                campo.attr('disabled', true)
                 $('.segundos').text(`REINICIAR`)
+
                 $('.campo-digitacao').css({
                     background: 'white',
                     fontWeight: 'bold'
                 })
                 campo.removeClass('borda-vermelha')
                 campo.removeClass('borda-verde')
+                inserePlacar()
             }
-            
+
         }, 1000)
     })
 }
-
 senhorDoTempo()
 
-function verificaTexto(){
+
+
+
+
+function verificaTexto() {
     let texto = $('.texto-box1').text()
     let campo = $('.campo-digitacao')
 
-    campo.on('input', function(){
+    campo.on('input', function () {
         let digitado = campo.val()
         let comparavel = texto.substr(0, digitado.length)
 
-        if(digitado == comparavel){
+        if (digitado == comparavel) {
             campo.addClass('borda-verde')
             campo.removeClass('borda-vermelha')
         }
-        else{
+        else {
             campo.addClass('borda-vermelha')
             campo.removeClass('borda-verde')
         }
@@ -86,3 +87,16 @@ function verificaTexto(){
 }
 
 verificaTexto()
+
+function inserePlacar() {
+    let corpoTabela = $('.placar').find('tbody')
+    let usuario = 'Rafa Alesson'
+    let numPalavras = $('#palavras').text()
+
+    let linha = `<tr>
+        <td> ${usuario} </td>
+        <td> ${numPalavras} </td>
+    </tr>`
+
+    corpoTabela.append(linha)
+}
