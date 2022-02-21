@@ -34,30 +34,34 @@
         <section class="box1">
             <section class="area-texto">
                 <h2 class="titulo-principal">Digite o texto abaixo:</h2>
-            <p class="texto-box1">Se minha vida é errada ninguém tem nada com isso. Eu posso fazer o que quero, eu posso
-                dizer o que penso, não tem ninguém que mande em mim! Não vai ser você. Já passei na sua vida e minha
-                vida esqueci. Quem quiser que fale de mim: tô nem aí, tô nem aí. E pra eles só tenho a dizer...
-                Se quiser fumar eu fumo!
-                Se quiser beber eu bebo!
-                Minha liberdade tá aí, tá aí.
-                Se quiser sair eu saio
-                Com quem me der vontade.
-                Minha liberdade tá aí, tá aí. Não devo nada a ninguém. <br> <br> - Conde</p>
+                <p class="texto-box1">Se minha vida é errada ninguém tem nada com isso. Eu posso fazer o que quero, eu
+                    posso
+                    dizer o que penso, não tem ninguém que mande em mim! Não vai ser você. Já passei na sua vida e minha
+                    vida esqueci. Quem quiser que fale de mim: tô nem aí, tô nem aí. E pra eles só tenho a dizer...
+                    Se quiser fumar eu fumo!
+                    Se quiser beber eu bebo!
+                    Minha liberdade tá aí, tá aí.
+                    Se quiser sair eu saio
+                    Com quem me der vontade.
+                    Minha liberdade tá aí, tá aí. Não devo nada a ninguém. <br> <br> - Conde</p>
             </section>
-            
+
 
             <section class="area-campo">
                 <ul class="informacoes1">
                     <li>
                         Você digitou: <span class="palavras" id="palavras"></span>
                     </li>
-                    
+
                     <li class="l1">
-                        segundos: <a href="index.html" class="segundos">10</a>
+                        segundos: <a href="index.html" class="segundos">6</a>
                     </li>
                 </ul>
 
                 <textarea name="" class="campo-digitacao" cols="30" rows="10" placeholder="Digite aqui:"></textarea>
+                <button id="restart">
+                    <img src="img/reload.png" alt="">
+                </button>
             </section>
         </section>
         <!--box1-->
@@ -78,28 +82,30 @@
 
 
             <section class="placar">
-                <h3 class="titulo-placar">TOP 3</h3>
+                <h3 class="titulo-placar">PLACAR</h3>
 
                 <table>
                     <thead>
                         <th>Nome</th>
                         <th>N° de palavras</th>
+                        <th>Remover</th>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td>Rafa Alesson</td>
-                            <td>10</td>
-                        </tr>
+                            <td>
+                                Nome Padrão
+                            </td>
 
-                        <tr>
-                            <td>Rafa Alesson</td>
-                            <td>10</td>
-                        </tr>
+                            <td>
+                                10
+                            </td>
 
-                        <tr>
-                            <td>Rafa Alesson</td>
-                            <td>10</td>
+                            <td>
+                                <a href="#" id="bt-remover">
+                                    <img src="img/lixo.png" alt="ícone de lixeira" class="bt-remover">
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

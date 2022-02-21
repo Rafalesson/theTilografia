@@ -6,6 +6,7 @@ body{
     color: #f5fafe;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .cabecalho{
@@ -57,7 +58,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 40%;
     margin: auto 0;
 }
@@ -109,6 +110,7 @@ body{
     border-radius: 10px;
     font-weight: bolder;
     color: black;
+    cursor: default;
 }
 
 #qtdPalavras{
@@ -137,7 +139,21 @@ body{
     color: #f5fafe;
 }
 
+#restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(245, 250, 254, .7);
+    width: 24%;
+    height: 7vh;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
+#restart:hover{
+    background: #f5fafe;
+}
 
 .box2{
     margin: 0 auto;
@@ -145,8 +161,6 @@ body{
     height: auto;
     display: flex;
     justify-content: space-evenly;
-
-
 }
 
 .informacoes2{
@@ -215,6 +229,11 @@ body{
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+}
+
+#bt-remover{
+    position: relative;
+    top: 5px;
 }
 
 
